@@ -1,0 +1,37 @@
+extends base.pug
+
+block scripts  
+    script(src='https://kit.fontawesome.com/bf618deaa2.js', crossorigin='anonymous')
+    script(src='../static/js/signup.js')
+    
+
+block style
+  style   
+      include ../static/css/indexstyle.css
+      include ../static/css/loginstyle.css
+      link(href='https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap', rel='stylesheet')
+    
+
+block content 
+    form(action="/signup", method="post") 
+      .container
+        h1  Sign Up for Free
+        .box
+          i.fa.fa-user
+          input#myname(type='text', name='myname', placeholder='Enter Your Full Name',required)
+        .box
+          i.fa.fa-envelope
+          input#email(type='email', name='email', placeholder='Enter Your Email',required)
+        .box
+          i.fa.fa-key
+          input#password1(type='password', name='password1', placeholder='Enter Your Password',required)
+          span#hideandseek1(onclick='myfunc1()')
+            i#show1.fa.fa-eye
+            i#hide1.fa.fa-eye-slash
+        .box
+          i.fa.fa-key
+          input#password2(type='password', name='password2', placeholder='Confirm Your Password',required)
+          span#hideandseek2(onclick='myfunc2()')
+            i#show2.fa.fa-eye
+            i#hide2.fa.fa-eye-slash
+        button.btn Sign Up

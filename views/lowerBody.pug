@@ -1,0 +1,88 @@
+extends base.pug
+
+block scripts  
+    script(src='https://kit.fontawesome.com/bf618deaa2.js', crossorigin='anonymous')
+    script(src='../static/js/hamburger.js')
+
+block style
+  style   
+      include ../static/css/indexstyle.css
+      include ../static/css/lowerbody.css
+      link(href='https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap', rel='stylesheet')
+
+block content 
+    section#home
+      h1#head1 Lower Body
+      p
+        | Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae odit dignissimos similique expedita? Consequatur eligendi aperiam rem adipisci aliquid facilis, nesciunt earum minima blanditiis ratione deserunt, ea magni voluptatibus suscipit?
+    #warmhead
+      h1#head2 Lower Body Exercises
+    section#warmup
+      .content
+        .exercises
+          h2.exercisename 1. Step-up: 3 sets of 15 reps (each side)
+          p.exercisepara
+            | Got a staircase? Or a box? Then you can do this leg workout. Step-ups are a simple beginner exercise that can give you stronger quads, glutes, and hamstrings. Just take one step at a time.
+          ul.exercisepoints
+            li Go to the stairs in your home or, if you don’t have a staircase, place a sturdy box in front of you. 
+            li
+              | Step up onto the box or the first stair with your right foot, then your left.
+            li
+              | Reverse, stepping back down with right foot, then left. Repeat, switching the leg you start with each time.
+        .vid
+          img(src='/static/images/lowerbody_1.gif', alt='')
+      .content
+        .exercises
+          h2.exercisename 2. Lunge: 3 sets of 15 reps (each side)
+          p.exercisepara
+            | There are dozens of lunge variations you can do, but even just a classic lunge builds up your quads and glutes. Plus, it strengthens your hamstrings.
+          ul.exercisepoints
+            li From a standing position, take a big step forward with one leg.
+            li
+              | Lower your body toward the floor until upper thigh of front leg is nearly parallel to the floor and back knee is just above the floor. 
+            li
+              | Raise up by putting pressure on the heel of your front leg. 
+            li
+              | Repeat by taking that big first step with the opposite leg. 
+        .vid
+          img(src='/static/images/lowerbody_2.gif', alt='')
+      .content
+        .exercises
+          h2.exercisename 3. Squat: 3–5 sets of 8–12 reps
+          p.exercisepara
+            | Squats are popular with weightlifters, which can lead to the misperception that they can be done only with weights. But even squatting with your bodyweight alone can give you strong leg muscles if you do it with good form.
+          ul.exercisepoints
+            li  Stand with feet slightly wider than shoulder width. 
+            li  Extend arms straight with palms facing down. 
+            li  Inhale and push hips back slightly as you bend your knees. 
+            li  Look straight ahead and keep chin up, shoulders upright, and back straight.  
+            li  Squat as low as you comfortably can, aiming to have your hips sink below your knees. 
+            li  Engage your core to push upward explosively from your heels.   
+        .vid
+          img(src='/static/images/lowerbody_3.gif', alt='')
+      .content
+        .exercises
+          h2.exercisename 4. Single-leg deadlifts: 3 sets of 15 reps on each leg
+          p.exercisepara
+            | Walk-outs are particularly good for stretching the hamstrings, and also activate your core. With this move, you&apos;ll work on flexibility, mobility, and strength. Pick up the speed to get your heart rate pumping even more.
+          ul.exercisepoints
+            li Start with left foot planted on the floor. Hinging at your hips, with a slight bend in left knee, reach arms forward and push right foot back.
+            li
+              | Focus on keeping hips and shoulders in one line. 
+            li Flex your back ankle and press your heel toward the wall behind you. 
+            li Squeeze glutes and drive right leg forward to return to the starting position.
+        .vid
+          img(src='/static/images/lowerbody_4.gif', alt='')
+      .content
+        .exercises
+          h2.exercisename 5. Hip bridges: 3 sets of 12 reps
+          p.exercisepara
+            | Brace core, squeeze glutes, push into heels, and lift your hips until shoulders, hips, and knees are in a line. Slowly lower your hips back to the floor.
+          ul.exercisepoints
+            li Lie on your back with knees bent and feet flat on the floor. 
+            li
+              |  You should be able to touch your heels with your fingertips.
+           
+        .vid
+          img(src='/static/images/lowerbody_5.gif', alt='')
+      

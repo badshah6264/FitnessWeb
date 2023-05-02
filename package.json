@@ -1,0 +1,19 @@
+{
+  "name": "fitness-web",
+  "version": "1.0.0",
+  "description": "This is Fitness Website",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon app.js"
+  },
+  "author": "Bhavesh Makwana",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "html": "^1.0.0",
+    "mongoose": "^6.8.4",
+    "nodemon": "^2.0.20",
+    "pug": "^3.0.2"
+  }
+}

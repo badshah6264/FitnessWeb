@@ -1,0 +1,28 @@
+extends base.pug
+
+block scripts  
+    script(src='https://kit.fontawesome.com/bf618deaa2.js', crossorigin='anonymous')
+    script(src='../static/js/login.js')
+    
+
+block style
+  style   
+      include ../static/css/indexstyle.css
+      include ../static/css/loginstyle.css
+      link(href='https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap', rel='stylesheet')
+
+block content 
+    form(action="/login", method="post") 
+      .container
+        h1  Login To Access
+        .box
+          i.fa.fa-envelope
+          input#email(type='email', name='email', placeholder='Enter Your Email',required)
+        .box
+          i.fa.fa-key
+          input#password(type='password', name='password', placeholder='Enter Your Password',required)
+          span#hideandseek(onclick='myfunc()')
+            i#show.fa.fa-eye
+            i#hide.fa.fa-eye-slash
+        button.btn Log In
+        a(href='/signup') Don&apos;t have an account? Sign Up Now

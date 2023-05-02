@@ -1,0 +1,74 @@
+#home::before {
+    content: "";
+    background: url('/static/images/dietbg.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: var(--before-top, 0px);
+    left: 0px;
+    height: 627px;
+    width: 100%;
+    z-index: -1;
+    opacity: 1;
+    clip-path: polygon(100% 0%, 100% 125%, 50% 83%, 0% 125%, 0% 0%);
+}
+
+#head2 {
+    margin-top: 300px;
+    margin-bottom: 25px;
+    border-bottom: 5px solid #27ff00;
+    border-top: 5px solid #27ff00;
+}
+
+#contactusform {
+    display: none;
+}
+
+.topnav-centered button {
+
+    border: 4px solid #27ff00;
+}
+
+#a {
+    display: none;
+}
+
+#c {
+    display: none;
+}
+
+
+.content {
+
+    background-color: #d4fada;
+
+}
+
+.topnav-left .left {
+
+    border-right: 2px solid #27ff00;
+}
+
+.topnav-left a.left:hover {
+    background-color: #27ff00;
+}
+
+
+.topnav-right a.right:hover {
+    border-color: #27ff00;
+    color: #27ff00;
+}
+
+#head1 {
+    border-left: 5px solid #27ff00;
+}
+
+footer {
+    background-color: #cbd0cc;
+}
+
+#otherContact {
+    border-left: 5px solid #27ff00;
+}
+
+#handles li a:hover {
+    color: #27ff00;
+}

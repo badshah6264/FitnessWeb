@@ -1,0 +1,82 @@
+footer{
+    display: none;
+}
+#navbar{
+    
+    display: none;
+}
+
+
+div::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background: url("/static/images/lbg.jpg") no-repeat;
+    background-size: cover;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+.pcontainer {
+    margin: auto;
+	display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+    width: 500px;
+    height: 200px;
+    background: transparent;
+    border-radius: 10px;
+    animation-name: popup;
+    animation-duration: 2s;  
+    animation-fill-mode: forwards;
+    opacity: 1;
+    border-bottom: 3px solid #a00000;
+    
+}
+
+.pheading{
+    margin-top: 20px;
+	animation-name: popup;
+    animation-duration: 5s;  
+    animation-fill-mode: forwards;
+}
+.pa{
+    text-decoration: none;
+	animation-name: popup;
+    animation-duration: 5s;  
+    animation-fill-mode: forwards;
+}
+.pbtn{
+    
+    display: block;
+    margin: 10px auto;
+    padding: 5px;
+     width: 95px;
+    border: transparent;
+    
+    background: transparent;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    
+    color: #cfe6ff;
+    animation-name: popup;
+    animation-duration: 5s;  
+    animation-fill-mode: forwards;
+    font-size: 20px;
+    
+}
+    
+.pbtn:hover{
+    background-color: black;
+    color: white;
+}
+
+@keyframes popup {
+  from { height: 0px;font-size : 0px}
+  
+}

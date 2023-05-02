@@ -1,0 +1,63 @@
+extends base.pug
+
+block scripts  
+    script(src='https://kit.fontawesome.com/bf618deaa2.js', crossorigin='anonymous')
+    script(src='../static/js/hamburger.js')
+
+block style
+  style   
+      include ../static/css/indexstyle.css
+      include ../static/css/diets.css
+      link(href='https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap', rel='stylesheet')
+
+block content 
+    section#home
+      h1#head1 Diet
+      p
+        | Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae odit dignissimos similique expedita? Consequatur eligendi aperiam rem adipisci aliquid facilis, nesciunt earum minima blanditiis ratione deserunt, ea magni voluptatibus suscipit?
+    #warmhead
+      h1#head2 Diet Plans
+    section#warmup
+      .content
+        .exercises
+          h2.exercisename 1. Weight Gain Diet
+          p.exercisepara
+            | Well-planned veg diet plan for muscle gain meets energy needs and contains various plant-based protein foods, such as soy products, beans, lentils, grains, nuts and seeds can provide the right amount of protein for bodybuilders without the use of any special foods or supplements.
+          ul.exercisepoints
+            li Just After You Wake Up – Drink a glass full of lukewarm water  with half a  lemon squeezed into it or mix one teaspoon of amla powder or juice
+
+            li Morning – A fruit of your choice + whey protein OR Soaked almonds + 1 glass skimmed milk
+              
+            li Breakfast – A bowl of oats/wheat flakes/ quinoa with skimmed milk and some nuts OR Whole wheat toast with peanut butter + milk
+
+            li Mid-Morning – Buttermilk made from low-fat yogurt OR 1 big bowl of watermelon/pineapple/grapefruit + 2 cheese slices
+
+            li Lunch – 2 wheat/jowar/bajra chapattis or brown rice + veggies + bowl of dal + cottage cheese
+
+            li Evening Snack – Sprouts or boiled legumes (chickpea/ black chana) with onion, tomato, cucumber, and lime juice + whey with water + eggs/cottage cheese/ low fat cheese slice OR Paneer and spinach roll/ 2 slices of brown bread + fresh juice (celery, carrot, beetroot, green apple, mint leaves, orange, and lemon juice)
+
+            li Dinner – 2 wheat/jowar/bajra chapattis or brown rice + veggies + bowl of dal + cottage cheese
+
+            li Bedtime - Milk/buttermilk 150 ml
+        .vid
+            img(src='/static/images/diet_1.jpg', alt='')
+      .content
+        .exercises
+          h2.exercisename 2. Weight Loss Diet 
+          p.exercisepara
+            | Arm circles are a great (and super easy) way to loosen up tension in the shoulders and get the joints warm, Burrell says.
+          ul.exercisepoints
+            li Just After You Wake Up – 1 glass warm water with some herb brewed in it +2-3 soaked almonds
+            li Morning - Lemon tea/ Ginger Tea/Coffee/ milk 1 cup (150 ml)
+            li Breakfast - Eggs omelette with spinach and shredded vegetables cooked OR Idlis / dosa/ Poha/ upma 1 cup cooked 
+            li Lunch - Salad with fresh vegetables and curd 1 cup OR Dal Palak/ chicken curry/ sambar/ rasam 1 cup OR Phulkas ( multigrain ) 1 piece OR Rice ½ cup OR Cooked vegetables/ greens/ palya 1 cup (150 gms)
+            li Evening - 6 pm Fruit/ sprouts/ cucumber –carrot slices/ vegetable soup
+            li Dinner - 7.30 Pm salad with fresh vegetables 1 cup OR Methi Dal / sambar/rasam 1 cup OR Phulkas ( multigrain ) 1-2 piece OR Cooked vegetables/ greens/ palya 1 cup (150 gms)
+            li Bedtime - Milk/buttermilk (optional ) 150 ml
+              
+        .vid
+          img(src='/static/images/diet_2.jpg', alt='')
+      
+     
+      
+      

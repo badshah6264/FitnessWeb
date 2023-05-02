@@ -1,0 +1,23 @@
+#home::before {
+    content: "";
+    background: url('/static/images/upperbodybg.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: var(--before-top, 0px);
+    left: 0px;
+    height: 627px;
+    width: 100%;
+    z-index: -1;
+    opacity: 1;
+    clip-path: polygon(100% 0%, 100% 125%, 50% 83%, 0% 125%, 0% 0%);
+}
+
+#contactusform{
+    display: none;
+    }
+    
+    #a{
+        display: none;
+    }
+    #c{
+        display: none;
+    }

@@ -1,0 +1,18 @@
+extends base.pug
+
+
+block style
+  style   
+      include ../static/css/indexstyle.css
+      include ../static/css/popup.css
+     
+      
+
+block content 
+    div.pcontainer
+        h1.pheading  
+            | Loged In Success
+        a.pa(href="/home") 
+            button.pbtn OK
+
+

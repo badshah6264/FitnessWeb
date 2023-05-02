@@ -1,0 +1,217 @@
+
+*{
+    font-family: 'Noto Serif', serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+/* Nabvar */
+#hamburger{
+    display: none;
+}
+
+#a{
+    display: none;
+}
+#c{
+    display: none;
+}
+
+/* Login form */
+
+body::before {
+    content: "";
+    background: url('/static/images/lbg.jpg') no-repeat center center/cover;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 760px;
+    width: 100%;
+    z-index: -1;
+    opacity: 1;
+    
+}
+
+.container{
+    position: fixed;
+    top: 30%;
+    left: 32%;
+    z-index: 1;
+    color: #cfe6ff;
+}
+
+.container a{
+    display: block;
+    text-align: center;
+    font-size: 13px;
+    text-decoration: none;
+    color:#cfe6ff;
+}
+
+.container h1{
+    border-bottom: 4px solid #a00000;
+    margin-bottom: 30px;
+    padding: 8px 0px;
+    display: inline-block;
+}
+
+.box{
+    margin: 11px 0px;
+    border-bottom: 3px solid #a00000;
+}
+
+.box input{
+    width: 260px;
+    padding: 7px;
+    background: none;
+    border: none;
+    outline: none;
+    
+    color:#cfe6ff;
+}
+
+.container a:hover{
+    color: #a00000;
+}
+
+.box input::placeholder {
+    color:#cfe6ff;
+    opacity: 0.6;
+}
+
+/* Eye button */
+
+#show{
+    display: none;
+    width: 20px;
+}
+
+#hide{
+    width: 20px;
+}
+
+#show1{
+    display: none;
+    width: 20px;
+}
+
+#hide1{
+    width: 20px;
+}
+
+#show2{
+    display: none;
+    width: 20px;
+}
+
+#hide2{
+    width: 20px;
+}
+
+#hideandseek{
+    display: inline-block;
+}
+
+#hideandseek1{
+    display: inline-block;
+}
+
+#hideandseek2{
+    display: inline-block;
+}
+
+/* Login Button */
+
+.btn{
+    display: block;
+    margin: 30px auto;
+    padding: 5px;
+    width: 95px;
+    border: 3px solid #a00000;
+    background: transparent;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    color: #cfe6ff;
+}
+
+.btn:hover{
+    background-color: black;
+    color: white;
+}
+
+/* Footer */
+
+footer{
+    display: none;
+}
+
+
+
+@media (min-width: 700px) and (max-width: 900px){
+
+    .container h1 {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+    .box input{
+        width: 200px;
+    }
+    body{
+        background-size: 135%;
+    }
+}
+@media (min-width: 500px) and (max-width: 700px){
+
+    .container h1 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    .box input{
+        width: 200px;
+    }
+    body{
+        background-size: 135%;
+    }
+}
+@media (min-width: 400px) and (max-width: 500px){
+
+    .container{
+        left: 20%;
+    }
+    .container h1 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .box input{
+        width: 200px;
+    }
+    body{
+        background-size: 135%;
+    }
+}
+@media (max-width: 400px){
+   
+    #topnav {
+        
+        width: 390px;
+    }
+    .container{
+        left: 20%;
+    }
+    .container h1 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .box input{
+        width: 200px;
+    }
+    body{
+        background-size: 135%;
+    }
+}

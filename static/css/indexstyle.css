@@ -1,0 +1,978 @@
+* {
+    font-family: 'Noto Serif', serif;
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+}
+
+
+/* Navbar */
+
+#topnav {
+    position: sticky;
+    top: 0px;
+    overflow: hidden;
+    background-color: rgb(0, 0, 0);
+    height: 55px;
+}
+
+#topnav-left .left {
+
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    padding: 19px;
+    font-weight: bold;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-right: 2px solid red;
+}
+
+#topnav-left .left:hover {
+    background-color: rgb(255, 0, 0);
+    color: rgb(253, 253, 253);
+}
+
+
+
+
+#topnav-centered a.active {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+#topnav-centered img {
+    height: 48px;
+    width: 50px;
+    filter: invert(1);
+    padding-right: 16px;
+}
+
+#topnav-centered button {
+
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 16px 29px;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border: 4px solid rgb(255, 0, 0);
+    font-size: 20px;
+    height: 56px;
+    font-weight: bold;
+}
+
+#topnav-right {
+
+    float: right;
+}
+
+#topnav-right .right {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    color: #ffffff;
+    background-color: rgb(0, 0, 0);
+    border: 2px solid #ffffff;
+    margin: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+#topnav .right:hover {
+    border-color: red;
+    color: red;
+}
+
+
+/* Home */
+
+
+#home {
+    padding: 3px 200px;
+    height: 288px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before {
+    content: "";
+    background: url('/static/images/homebg.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: var(--before-top, 0px);
+    left: 0px;
+    height: 627px;
+    width: 100%;
+    z-index: -1;
+    opacity: 1;
+    clip-path: polygon(100% 0%, 100% 125%, 50% 83%, 0% 125%, 0% 0%);
+}
+
+#head1 {
+    color: #ffffff;
+    font-size: 72px;
+    margin-top: 150px;
+    margin-bottom: 20px;
+    border-left: 5px solid red;
+    padding-left: 10px;
+}
+
+
+
+#home p {
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+
+/* Warmup Exercise */
+
+#warmhead {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#head2 {
+    margin-top: 300px;
+    margin-bottom: 25px;
+    color: #000000;
+    font-size: 72px;
+    display: inline-block;
+    text-align: center;
+    border-bottom: 5px solid red;
+    border-top: 5px solid red;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 73% 25%;
+    background-color: #fcdddd;
+    border-bottom-right-radius: 150px;
+    border-top-right-radius: 150px;
+    border: 5px solid black;
+}
+
+.exercises {
+    display: inline;
+    padding: 20px;
+}
+
+.exercisename {
+    display: inline;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    padding-right: 20px;
+    border-bottom-right-radius: 40px;
+    border-top-right-radius: 40px;
+    margin: -20px;
+    font-size: 25px;
+}
+
+.exercisepara {
+    margin: 25px 20px;
+    font-size: 20px;
+}
+
+.exercisepoints {
+    margin: 25px 65px;
+    font-size: 20px;
+}
+
+.vid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vid img {
+    width: 230px;
+    height: 200px;
+}
+
+/* About */
+
+#abouthead {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+#about {
+    background-color: #000000;
+    color: #ffffff;
+    height: 525px;
+    margin-top: 10px;
+}
+
+#about h1 {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 72px;
+    /* padding-top: 8px; */
+    border-bottom: 5px solid red;
+    border-top: 5px solid red;
+}
+
+#about p {
+    margin-top: 12px;
+    font-size: 15px;
+    text-align: center;
+    padding: 0px 70px;
+    padding-bottom: 20px;
+
+}
+
+
+
+/* Contact Form */
+
+#contactusform {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #d0cbcb;
+}
+
+#contact {
+    margin-top: 60px;
+    margin-bottom: 30px;
+    font-size: 72px;
+    border-bottom: 5px solid red;
+    border-top: 5px solid red;
+}
+
+
+
+.container a {
+    display: block;
+    text-align: center;
+    font-size: 13px;
+    text-decoration: none;
+    color: black;
+}
+
+.container h1 {
+    border-bottom: 4px solid #ff0000;
+    margin-bottom: 30px;
+    padding: 8px 0px;
+    display: inline-block;
+}
+
+.box {
+    margin: 11px 0px;
+    border-bottom: 3px solid #ff0000;
+}
+
+.box input {
+    width: 260px;
+    padding: 7px;
+    background: none;
+    border: none;
+    outline: none;
+    font-weight: bold;
+}
+
+
+
+.box input::placeholder {
+    color: rgb(0, 0, 0);
+    opacity: 1;
+}
+
+.btn {
+    display: block;
+    margin: 30px auto;
+    padding: 5px;
+    width: 95px;
+    border: 3px solid #ff0000;
+    background: transparent;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.btn:hover {
+    background-color: black;
+    color: white;
+}
+
+#contactForm {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+}
+
+#contactForm input {
+    margin: 10px;
+    width: 265px;
+}
+
+
+/* Footer */
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #d0cbcb;
+}
+
+#handles {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+
+}
+
+#handles li a:hover {
+    color: #ff0000;
+}
+
+footer ul li {
+    list-style-type: none;
+    margin: 10px 60px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #000000;
+}
+
+footer ul li a i {
+    padding-right: 8px;
+}
+
+footer p {
+    margin: 10px;
+    margin-top: 20px;
+    font-size: 25px;
+    border-top: 2px solid black;
+}
+
+#otherContact {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 32px;
+    border-left: 5px solid red;
+    padding-left: 10px;
+}
+
+
+
+
+
+@media (min-width: 900px) and (max-width: 1100px) {
+    #topnav-centered button img {
+        height: 40px;
+        width: 40px;
+    }
+
+    #topnav-centered button {
+        font-size: 16px;
+    }
+
+    #topnav-left .left {
+        padding: 19px 7px;
+        font-size: 13px;
+    }
+
+    #topnav-right .right {
+        margin: 14px 10px;
+        font-size: 13px;
+        padding: 5px 6px;
+    }
+
+    #about {
+        height: 600px;
+    }
+
+    .vid img {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 900px) {
+    #topnav-centered button img {
+        height: 30px;
+        width: 30px;
+    }
+
+    #topnav-centered button {
+        font-size: 14px;
+    }
+
+    #topnav-left .left {
+        font-size: 13px;
+        padding: 20px 5px
+    }
+
+
+    #topnav-right .right {
+        margin: 14px 10px;
+        padding: 5px 6px;
+        font-size: 13px;
+    }
+
+    #about {
+        height: 590px;
+    }
+
+    .vid img {
+        width: 150px;
+        height: 150px;
+    }
+
+    #home {
+        padding: 3px 100px;
+    }
+
+    #head1 {
+        font-size: 50px;
+    }
+
+    #home p {
+        font-size: 1rem;
+    }
+
+    #head2 {
+        font-size: 50px;
+    }
+
+    #about p {
+        font-size: 14px;
+    }
+
+    #abouthead h1 {
+
+        font-size: 45px;
+    }
+
+    #abouthead {
+        padding: 15px 50px;
+
+    }
+
+    #contact {
+        margin-top: 50px;
+        margin-bottom: 25px;
+        font-size: 50px;
+    }
+
+    .exercisename {
+        font-size: 21px;
+    }
+
+    .exercisepoints {
+        font-size: 14px;
+    }
+
+    .exercisepara {
+        font-size: 16px;
+    }
+
+    #contactForm input {
+
+        width: 200px;
+    }
+
+}
+
+
+
+@media (min-width: 500px) and (max-width: 700px) {
+
+    .line {
+        background-color: #d0cbcb;
+        width: 40px;
+        height: 6px;
+        margin: 6px;
+        border-radius: 5px;
+    }
+
+    #topnav {
+
+        position: relative;
+        top: 0px;
+        left: 0px;
+        height: 470px;
+    }
+
+    #topnav-left .left {
+        float: none;
+        display: block;
+        border: none;
+        border-radius: 0px;
+        border-bottom: 1px solid red;
+        padding-right: 67px;
+
+    }
+
+    #topnav-left .left:hover {
+        background-color: #ff0000;
+        color: rgb(255, 255, 255);
+    }
+
+
+    #topnav {
+        height: 55px;
+
+    }
+
+    #topnav-left {
+
+        display: none;
+
+    }
+
+    #topnav-right {
+
+        display: none;
+        float: none;
+    }
+
+    #topnav-right .right {
+        padding: 19px;
+        padding-right: 67px;
+        float: none;
+        display: block;
+        margin: 0px;
+        border: none;
+        font-weight: bold;
+        border-bottom: 1px solid rgb(255, 255, 255);
+
+    }
+
+    #topnav-centered {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #topnav-centered button {
+        margin: auto;
+        position: relative;
+        top: 0px;
+        left: 0px;
+        transform: none;
+    }
+
+
+    .vid img {
+        width: 100px;
+        height: 130px;
+    }
+
+    #home {
+        padding: 3px 70px;
+    }
+
+    #head1 {
+        font-size: 45px;
+    }
+
+    #head2 {
+        font-size: 45px;
+    }
+
+    #about {
+        height: 500px;
+    }
+
+    #abouthead h1 {
+
+        font-size: 45px;
+    }
+
+    #abouthead {
+        padding: 15px 50px;
+
+    }
+
+    #about p {
+        font-size: 12px;
+        padding: 0px 7px;
+        padding-bottom: 20px;
+    }
+
+    #contact {
+        margin-top: 50px;
+        margin-bottom: 25px;
+        font-size: 45px;
+    }
+
+    .exercises {
+
+        padding-right: 0px;
+    }
+
+    .exercisename {
+        font-size: 14px;
+    }
+
+    .exercisepoints {
+        font-size: 12px;
+    }
+
+    .exercisepara {
+        margin: 15px;
+        font-size: 13px;
+    }
+
+    #contactForm input {
+
+        width: 200px;
+    }
+
+}
+
+
+
+
+@media (min-width: 400px) and (max-width: 500px) {
+
+    .line {
+        background-color: #d0cbcb;
+        width: 40px;
+        height: 6px;
+        margin: 6px;
+        border-radius: 5px;
+    }
+
+    #topnav {
+
+        position: relative;
+        top: 0px;
+        left: 0px;
+        height: 470px;
+    }
+
+    #topnav-left .left {
+        float: none;
+        display: block;
+        border: none;
+        border-radius: 0px;
+        border-bottom: 1px solid red;
+        padding-right: 67px;
+
+    }
+
+    #topnav-left .left:hover {
+        background-color: #ff0000;
+        color: rgb(255, 255, 255);
+    }
+
+
+    #topnav {
+        height: 55px;
+
+    }
+
+    #topnav-left {
+
+        display: none;
+
+    }
+
+    #topnav-right {
+
+        display: none;
+        float: none;
+    }
+
+    #topnav-right .right {
+        padding: 19px;
+        padding-right: 67px;
+        float: none;
+        display: block;
+        margin: 0px;
+        border: none;
+        font-weight: bold;
+        border-bottom: 1px solid rgb(255, 255, 255);
+
+    }
+
+    #topnav-centered {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #topnav-centered button {
+        margin: auto;
+        position: relative;
+        top: 0px;
+        left: 0px;
+        transform: none;
+    }
+    #topnav-centered button img {
+    height: 30px;
+    width: 30px;
+    padding-right: 10px;
+    }
+    #topnav-centered button a {
+        font-size: 15px;
+    }
+
+    .vid img {
+        width: 100px;
+        height: 130px;
+    }
+
+    #home {
+        padding: 3px 7px;
+    }
+    #home p{
+        font-size: 12px;
+    }
+
+    #head1 {
+        font-size: 45px;
+    }
+
+    #head2 {
+        font-size: 45px;
+    }
+
+    #about {
+        height: 530px;
+    }
+
+    #abouthead h1 {
+
+        font-size: 45px;
+    }
+
+    #abouthead {
+        padding: 15px 50px;
+
+    }
+
+    #about p {
+        font-size: 11px;
+        padding: 0px 7px;
+        padding-bottom: 20px;
+    }
+
+    #contact {
+        margin-top: 50px;
+        margin-bottom: 25px;
+        font-size: 45px;
+    }
+
+    .exercises {
+
+        padding-right: 0px;
+    }
+
+    .exercisename {
+        font-size: 12px;
+    }
+
+    .exercisepoints {
+        font-size: 10px;
+    }
+
+    .exercisepara {
+        margin: 15px;
+        font-size: 11px;
+    }
+
+    #contactForm input {
+
+        width: 200px;
+    }
+
+}
+
+@media (max-width: 400px) {
+
+
+    body{
+        width: 400px;
+    }
+    .line {
+        background-color: #d0cbcb;
+        width: 40px;
+        height: 6px;
+        margin: 6px;
+        border-radius: 5px;
+    }
+
+    #topnav {
+
+        position: relative;
+        top: 0px;
+        left: 0px;
+        height: 470px;
+    }
+
+    #topnav-left .left {
+        float: none;
+        display: block;
+        border: none;
+        border-radius: 0px;
+        border-bottom: 1px solid red;
+        padding-right: 67px;
+
+    }
+
+    #topnav-left .left:hover {
+        background-color: #ff0000;
+        color: rgb(255, 255, 255);
+    }
+
+
+    #topnav {
+        height: 55px;
+
+    }
+
+    #topnav-left {
+
+        display: none;
+
+    }
+
+    #topnav-right {
+
+        display: none;
+        float: none;
+    }
+
+    #topnav-right .right {
+        padding: 19px;
+        padding-right: 67px;
+        float: none;
+        display: block;
+        margin: 0px;
+        border: none;
+        font-weight: bold;
+        border-bottom: 1px solid rgb(255, 255, 255);
+
+    }
+
+    #topnav-centered {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #topnav-centered button {
+        margin: auto;
+        position: relative;
+        top: 0px;
+        left: 0px;
+        transform: none;
+    }
+    #topnav-centered button img {
+    height: 30px;
+    width: 30px;
+    padding-right: 10px;
+    }
+    #topnav-centered button a {
+        font-size: 15px;
+    }
+
+    .vid img {
+        width: 80px;
+        height: 100px;
+    }
+    #home::before{
+        width: 400px;
+    }
+    #home {
+        
+        padding: 3px 7px;
+    }
+    #home p{
+        font-size: 12px;
+    }
+
+    #head1 {
+        font-size: 45px;
+    }
+
+    #head2 {
+        font-size: 45px;
+    }
+
+    #about {
+        height: 530px;
+    }
+
+    #abouthead h1 {
+
+        font-size: 45px;
+    }
+
+    #abouthead {
+        padding: 15px 50px;
+
+    }
+
+    #about p {
+        font-size: 10px;
+        padding: 0px 7px;
+        padding-bottom: 20px;
+    }
+
+    #contact {
+        margin-top: 50px;
+        margin-bottom: 25px;
+        font-size: 45px;
+    }
+
+    .exercises {
+
+        padding-right: 0px;
+    }
+
+    .exercisename {
+        font-size: 9px;
+    }
+
+    .exercisepoints {
+        font-size: 9px;
+    }
+
+    .exercisepara {
+        margin: 15px;
+        font-size: 9px;
+    }
+
+    #contactForm input {
+
+        width: 200px;
+    }
+
+}
+

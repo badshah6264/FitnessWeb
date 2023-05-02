@@ -1,0 +1,149 @@
+extends base.pug
+
+block scripts  
+    script(src='https://kit.fontawesome.com/bf618deaa2.js', crossorigin='anonymous')
+    script(src='../static/js/hamburger.js')
+
+block style
+  style   
+      include ../static/css/indexstyle.css
+      link(href='https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap', rel='stylesheet')
+
+block content 
+    section#home
+      h1#head1
+        | Fitness Web 
+      p
+        | Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et consequatur, exercitationem neque labore
+        | dignissimos itaque esse voluptatem dolorum? Distinctio possimus accusamus error deleniti animi nostrum
+        | architecto magni necessitatibus? A, accusantium.
+    
+
+    section#warmup
+      #warmhead
+        h1#head2 Warm Up Exercises
+      .content
+        .exercises
+          h2.exercisename 1. Hip Circles &mdash; 8 reps outward, 8 reps inward
+          p.exercisepara
+            | Hip rotations are a great way to loosen up the hips,&quot; Burrell says. &quot;If your hips are tight, like mine, these are so important to help with preparing for lower body exercises.&quot; Tight hips can inhibit the muscles around them from firing properly, specifically the glues, which can cause other body parts to compensate and become strained.
+          ul.exercisepoints
+            li Stand with feet together.
+            li
+              | Raise one knee to 90 degrees. Circle the hip out, making a big circle with your knee. Make the movement as wide as you can while staying stable.
+            li
+              | Keep circling slowly for eight reps, then switch direction for another eight reps. Repeat on the other leg.
+        .vid
+          img(src='/static/images/warmup-1.gif', alt='')
+      .content
+        .exercises
+          h2.exercisename 2. Arm circles &mdash; 8 reps forward, 8 reps backward
+          p.exercisepara
+            | Arm circles are a great (and super easy) way to loosen up tension in the shoulders and get the joints warm, Burrell says.
+          ul.exercisepoints
+            li Stand with your feet shoulder-width apart, arms by your sides.
+            li
+              | Slowly swing your arms forward in a circular motion. You should feel your shoulders loosening up as you go.
+            li
+              | Continue the circular motion for eight reps. Then, circle the arms in the opposite direction for eight reps.
+        .vid
+          img(src='/static/images/warmup-2.gif', alt='')
+      .content
+        .exercises
+          h2.exercisename 3. Jump Rope &mdash; 2 minutes
+          p.exercisepara
+            | Jumping rope is one of the quickest ways to get your heart rate up and your body warm. Burrell suggests jumping for two minutes at a moderate pace. You should feel your heart beating faster. Feel free to get fancy, like she does, if you feel comfortable with the rope. Bonus: Jumping rope is a great warm-up for your arms and shoulders, too!
+          ul.exercisepoints
+            li Take a rope's end in your hands.
+            li Grab your jump rope and jump for 2 minutes.
+        .vid
+          img(src='/static/images/warmup-3.gif', alt='')
+      .content
+        .exercises
+          h2.exercisename 4. Walk-Outs &mdash; 8 reps
+          p.exercisepara
+            | Walk-outs are particularly good for stretching the hamstrings, and also activate your core. With this move, you&apos;ll work on flexibility, mobility, and strength. Pick up the speed to get your heart rate pumping even more.
+          ul.exercisepoints
+            li Start with your feet hip-width apart, arms at sides.
+            li
+              | Bend the at hips to reach your hands to floor; crawl out to a high plank position.
+            li Pause for a couple seconds your with shoulders over your wrists and abs engaged.
+            li Crawl your hands back to feet and stand up. That&apos;s one rep.
+            li Do eight reps.
+        .vid
+          img(src='/static/images/warmup-4.gif', alt='')
+      .content
+        .exercises
+          h2.exercisename 5. Reverse Lunge to Knee Raise &mdash; 12 reps each side
+          p.exercisepara
+            | Lunges work the glutes, quads, and hamstrings. Plus, going straight from lunge to lift requires some serious core strength and stability.
+          ul.exercisepoints
+            li Stand with your feet hip-width apart.
+            li
+              | Take a big step back with your right foot. Bend both knees, lowering yourself until your right knee is about 6 inches off the floor.
+            li
+              | Push off your right foot to stand up, and bring the knee out in front of you at a 90-degree angle.
+            li Immediately step your right foot back into another reverse lunge.
+            li Do 12 reps on one leg, then 12 reps on the other.
+        .vid
+          img(src='/static/images/warmup-5.gif', alt='')
+      .content
+        .exercises
+          h2.exercisename 6. Squats &mdash; 15 reps
+          p.exercisepara
+            | Squats work your glutes, quads, and hamstrings. And depending on what type of strength training you&apos;re doing, there&apos;s a good chance you&apos;ll be doing a squatting motion at some point, with or without weight. Doing a few as part of your warm-up helps your body get used to the movement before you progress it.
+          ul.exercisepoints
+            li
+              | Stand with your feet shoulder-width apart, toes turned out slightly, hands at your chest.
+            li
+              | Bend at your knees and hips to move into a squat, bringing your butt down to knee height. Keep your chest high.
+            li Drive through your heels to return to standing. Do 15 reps.
+        .vid
+          img(src='/static/images/warmup-6.gif', alt='')
+      .content
+        .exercises
+          h2.exercisename 7. Squat Pulses &mdash; 10 seconds
+          p.exercisepara
+            | After you&apos;ve done 15 squats, Burrell says to pulse in the squat position for 10 seconds. It works the same muscles in a slightly different way, and adding some speed raises your heart rate a bit, too. Remember to keep your back flat (no arching or rounding) and chest raised.
+          ul.exercisepoints
+            li
+              | Start with your hips. The first movement of a squat should always be pushing your hips back behind you.
+            li
+              | Knees over ankles. In a perfect squat, your shins should stay near vertical and ankles should move very little.
+            li Keep your low back neutral.
+            li Maintain width between your knees.
+        .vid
+          img(src='/static/images/warmup-7.gif', alt='')
+
+    section#about
+      #abouthead
+        h1 About Us
+      p
+        | Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet ratione sapiente sit dolor autem similique? Quis iste cupiditate modi repellat vel quam molestiae fugiat facere, illo, et dolorem at neque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem eos, commodi delectus neque repellat adipisci, nobis soluta nisi temporibus incidunt laudantium quibusdam obcaecati aut! Ipsam at iure odio minus exercitationem.
+        | Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati blanditiis, sapiente amet voluptates quasi illum veritatis voluptate iste recusandae autem! Tempore nobis at ipsa nemo fugit quia sapiente facilis itaque.
+        | Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae molestias illum dicta laboriosam aliquid voluptate voluptates voluptatum. Eum iusto iure sunt veniam voluptates ipsam quibusdam cupiditate? Nemo, error dolorem? Molestias veritatis nisi in ab assumenda? Nisi ipsam praesentium, corrupti assumenda illum quam amet velit quos odit. Eos recusandae fuga quas quos vitae nam delectus, architecto officia, maxime quae totam tempore, cumque rerum dolor voluptate et est quis. Cum tempora illo ipsum fugiat recusandae quasi quia dolore, esse repudiandae, voluptatibus inventore autem. Pariatur iusto nam corrupti! Ipsum voluptas officiis deserunt, neque odio error architecto sed, eligendi consequatur ea molestias tenetur non nobis alias cum optio expedita porro. Commodi culpa, libero eius sit debitis, cupiditate sunt vitae quaerat, laudantium maxime sequi nulla nobis eos reprehenderit voluptatum iste fugiat dolore repudiandae ea! Incidunt tempora maxime eligendi perferendis sit. Dolores facilis dolorum veniam illum eaque quisquam aliquam pariatur corrupti dignissimos modi est, inventore aperiam sed rem necessitatibus aliquid. Minus perspiciatis rem dolorem nesciunt quidem vel molestias necessitatibus culpa deleniti beatae, minima eos ad itaque corrupti a laudantium delectus iure cum? Vitae, rem aut exercitationem nisi modi id a, veritatis quod autem porro obcaecati rerum animi. Provident modi omnis deserunt perferendis, fuga expedita hic ut facilis dolorum recusandae aperiam, ex vitae reiciendis ducimus molestias dolore tempore qui nesciunt tempora suscipit maiores minus. Placeat natus non earum veniam in nisi ut dicta ducimus enim maxime est voluptate cumque maiores libero accusamus aspernatur optio vero nobis commodi porro neque, dolor cupiditate excepturi quisquam? Commodi provident accusantium ea!
+
+    section#contactusform
+      h1#contact Contact Us
+      form#contactForm(action='/home', method='post')
+        .container
+          .box
+            i.fa.fa-user
+            input#myname(type='text', name='myname', placeholder='Enter Your Full Name')
+          .box
+            i.fa.fa-envelope
+            input#email(type='email', name='email', placeholder='Enter Your Email')
+          .box
+            i.fa.fa-phone
+            input#phone(type='number', name='phone', placeholder='Enter Your Phone')
+          .box
+            i.fa.fa-calendar
+            input#age(type='number', name='age', placeholder='Enter Your Age')
+          .box
+            i.fa.fa-male
+            i.fa.fa-female
+            input#gender(type='text', name='gender', placeholder='Enter Your Gender')
+          .box
+            i.fa.fa-comment
+            input#message(type='text', name='message', placeholder='Enter Your Query')
+          button.btn(type='submit') Submit
